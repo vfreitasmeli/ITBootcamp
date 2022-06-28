@@ -12,6 +12,7 @@ public class Main {
         pessoaEmptyConstructor.showPersonEmpty();
         pessoaPartialConstructor.showPersonPartial();
         pessoaFullConstructor.showFullPeroson();
+        pessoaFullConstructor.calculaImc();
 
     }
 }

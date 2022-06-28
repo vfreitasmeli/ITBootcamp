@@ -36,12 +36,13 @@ public class Pessoa {
     }
 
     public void showFullPeroson() {
-        System.out.printf("Nome: %s, idade: %d, id: %s, peso: %f , altura: %f ", nome, idade, id, peso, altura);
+        System.out.printf("Nome: %s, idade: %d, id: %s, peso: %.2f , altura: %.2f ", nome, idade, id, peso, altura);
     }
 
+    public void calculaImc() {
+        double resultado = peso / Math.pow(altura, (double) 2);
+        System.out.printf("O resultado do IMC é %.2f", resultado);
+    }
 
-//    // public void showPersonFull() {
-//        System.out.println(name + age + id + weight + height);
-//    }
 
 }
