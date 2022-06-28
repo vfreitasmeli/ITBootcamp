@@ -7,6 +7,8 @@ public class Pessoa {
     String id;
     double peso;
     double altura;
+    double resultadoImc;
+    String msgImc;
 
     // exercicio 2 - constructors
     public Pessoa() {
@@ -40,8 +42,22 @@ public class Pessoa {
     }
 
     public void calculaImc() {
-        double resultado = peso / Math.pow(altura, (double) 2);
-        System.out.printf("O resultado do IMC é %.2f", resultado);
+        resultadoImc = peso / Math.pow(altura, (double) 2);
+        System.out.printf("O resultado do IMC é %.2f\n", resultadoImc);
+    }
+
+    public void fullDataPersonMessages() {
+        String mensagemIdade = (idade < 18) ? "menor de idade" : "maior de idade";
+        if(resultadoImc < 20) {
+            msgImc = "está abaixo do peso";
+        } else if (resultadoImc > 21 && resultadoImc < 25 ) {
+            msgImc = "está com peso ideal";
+        } else {
+            msgImc = "está com sobrepeso";
+        }
+        System.out.printf("%s, tem %d anos e é %s. Seu peso é de %.2f kgs e tem %.2f cm de altura.\n" +
+                "O resultado do seu IMC é %.2f, o que indica que %s. Seu id é %s.\n"
+                , nome, idade, mensagemIdade, peso, altura, resultadoImc, msgImc, id);
     }
 
 
