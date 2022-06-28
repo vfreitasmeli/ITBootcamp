@@ -35,7 +35,7 @@ public class Pessoa {
         System.out.printf("Nome: %s, idade: %d, id: %s\n", nome, idade, id);
     }
 
-    public void showFullPeroson() {
+    public void showFullPerson() {
         System.out.printf("Nome: %s, idade: %d, id: %s, peso: %.2f , altura: %.2f ", nome, idade, id, peso, altura);
     }
 
