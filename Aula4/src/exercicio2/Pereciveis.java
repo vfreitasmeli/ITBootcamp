@@ -41,8 +41,6 @@ public class Pereciveis extends Produtos {
                 resultado = super.calcular(quantidadeDeProdutos);
                 break;
         }
-
-        System.out.println(resultado);
         return resultado;
     }
 }
