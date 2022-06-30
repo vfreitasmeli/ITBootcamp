@@ -21,6 +21,7 @@ public class Pereciveis extends Produtos {
                 "diasParaVencer=" + diasParaVencer +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", resultado=" + resultado +
                 '}';
     }
 

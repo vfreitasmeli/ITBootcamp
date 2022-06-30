@@ -18,9 +18,9 @@ public class NaoPereciveis extends Produtos {
     @Override
     public String toString() {
         return "NaoPereciveis{" +
-                "diasParaVencer=" + diasParaVencer +
-                ", nome='" + nome + '\'' +
+                "nome='" + nome + '\'' +
                 ", preco=" + preco +
+                ", resultado=" + resultado +
                 '}';
     }
 
