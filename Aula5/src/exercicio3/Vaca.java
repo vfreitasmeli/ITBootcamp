@@ -1,8 +1,8 @@
 package exercicio3;
 
-public class Cachorro extends Animal {
+public class Vaca extends Animal{
 
-    public Cachorro(String nome, String som) {
+    public Vaca(String nome, String som) {
         super(nome, som);
     }
 

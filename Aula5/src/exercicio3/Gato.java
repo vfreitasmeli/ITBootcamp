@@ -1,13 +1,12 @@
 package exercicio3;
 
 public class Gato extends Animal {
-
-    public Gato(String som) {
-        super(som);
+    public Gato(String nome, String som) {
+        super(nome, som);
     }
 
     @Override
     public void emitirSom() {
-        System.out.println("Gato: " + som);
+        System.out.printf("%s faz %s\n", nome, som);
     }
 }
