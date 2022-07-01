@@ -1,9 +1,7 @@
 package pratica2;
 
-import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Garagem {
     public List<Veiculo> listaVeiculos;
@@ -33,6 +31,27 @@ public class Garagem {
     public void orderByLabel() {
         listaVeiculos.stream()
                 .sorted(Comparator.comparing(Veiculo::getMarca)).forEach(System.out::println);
+    }
+
+    // preco ate 1000
+    public void priceUntilOneThousand() {
+        listaVeiculos.stream()
+                .filter((v -> v.getPreco() < 1000))
+                .sorted().forEach(System.out::println);
+    }
+
+    //preco maior ou igual a 1000
+    public void priceOverOneThousand() {
+        listaVeiculos.stream()
+                .filter((v -> v.getPreco() >= 1000))
+                .sorted().forEach(System.out::println);
+    }
+
+    //preco medio total
+    public void averagePrice() {
+        double media = listaVeiculos.stream().mapToDouble(Veiculo::getPreco).average().getAsDouble();
+
+        System.out.printf("A média de preço dos veículos é R$ %.2f \n", media);
     }
 
 }

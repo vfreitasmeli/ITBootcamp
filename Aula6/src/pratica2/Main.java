@@ -17,9 +17,12 @@ public class Main {
 
         Garagem garage = new Garagem(listaVeiculos);
 
-        // garage.showVehicles();
-        // garage.orderByPriceAsc();
+        garage.showVehicles();
+        garage.orderByPriceAsc();
         garage.orderByLabel();
+        garage.priceUntilOneThousand();
+        garage.priceOverOneThousand();
+        garage.averagePrice();
 
         // listaVeiculos.forEach(System.out::println);
 
